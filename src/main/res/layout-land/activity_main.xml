@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">>
+
+    //David Muir MPD Resit CourseWork
+    //Matric #S1428976
+
+    <TextView
+        android:text="Mobile Platform Development -  Weather Mobile App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:text="Forecast Locations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="2sp"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"/>
+    <View
+
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:visibility="visible"
+        android:background="@android:color/black"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/GlasgowButton" android:text="Glasgow Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/EdinburghButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false"
+                android:text="Edinburgh Forecast" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/AberdeenButton" android:text="Aberdeen Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/DundeeButton" android:text="Dundee Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/FortWilliamButton" android:text="Fort William Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/NorthBerwickButton" android:text="North Berwick Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/UllapoolButton" android:text="Ullapool Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/PortreeButton" android:text="Portree Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/LerwickButton" android:text="Lerwick Forecast"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/ManchesterButton" android:text="Manchester Forecast" android:layout_toStartOf="@+id/RoadWorkButton" android:layout_alignParentTop="true"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

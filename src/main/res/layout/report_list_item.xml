@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="5dp"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    //David Muir MPD Resit CourseWork
+    //Matric #S1428976
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+        android:id="@+id/DayTextID"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="Monday"
+                android:textStyle="normal|bold"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/WeatherTextID"
+                android:layout_width= "match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+
+                android:divider="@color/black"
+                android:dividerHeight="2dp"
+                android:padding="5dp"
+
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Weather" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/WeatherIconList"
+            app:srcCompat="@drawable/sunny"
+            android:background="@drawable/sunny" />
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:background="@android:color/black"
+        android:layout_weight="0.02"
+        android:layout_height="0.1dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_weight="0.03">
+
+        <TextView
+            android:text="Min Temperature:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListMinTempTextID"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+
+        <TextView
+            android:text="Max Temperature:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListMaxTempTextID"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+        <View
+
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="Wind Direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListWindDirectionTextID"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+        <View
+
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/black"
+            />
+
+        <TextView
+            android:text="Visibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListVisibilityTextID"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+        android:layout_weight="0.31"
+        android:divider="@color/black">
+
+    </LinearLayout>
+
+
+</LinearLayout>

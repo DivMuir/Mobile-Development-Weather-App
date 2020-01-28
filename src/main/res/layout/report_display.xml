@@ -1,0 +1,556 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    //David Muir MPD Resit CourseWork
+    //Matric #S1428976
+
+    <TableLayout
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:text="Matric- S1428976"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textAlignment="center" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/LocationTextID"
+                android:text="Location :Weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:divider="@color/black"
+                android:dividerHeight="2dp"
+                android:padding="5dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/black">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/WeatherTextID"
+                    android:text="Weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.87"
+
+                    android:divider="@color/black"
+                    android:dividerHeight="2dp"
+                    android:padding="5dp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="51dp"
+                    app:srcCompat="@drawable/sunny"
+                    android:id="@+id/WeatherIconReport"
+                    android:background="@drawable/sunny" />
+            </LinearLayout>
+
+
+        </TableRow>
+
+            <TableRow>
+
+                <View
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:visibility="visible"
+                    android:background="@android:color/black"
+                    />
+
+            </TableRow>
+
+
+        <TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/WeatherInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+
+                    android:text="Weather Info"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="normal|bold" />
+            </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+            <TableRow>
+
+                <View
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:visibility="visible"
+                    android:background="@android:color/darker_gray"
+                    />
+
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/MinTempTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Min Temp:"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:divider="@color/gray"
+                android:dividerHeight="2dp"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/MaxTempTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Max Temp:"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/WindDirectionTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Wind DIrection:"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+        </TableRow>
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/WindSpeedTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Wind Speed"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/VisibilityTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Visibility"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Details"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textAllCaps="false" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/HumidityTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:text="Humidity"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+                <View
+
+                    android:layout_width="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/PressureTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:text="Pressure"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/UVRiskTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:text="UV Risk"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.84" />
+
+                <TextView
+                    android:id="@+id/UVLevelTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:text="Safe"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1.01" />
+
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/PollutionTextID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:text="Pollution"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="viewStart" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:visibility="visible"
+                android:background="@android:color/darker_gray"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/SunRiseTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:text="SunRise"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+
+
+                    <View
+
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@android:color/darker_gray"
+                        />
+
+
+                <TextView
+                    android:id="@+id/SunsetTextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="SunSet"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+
+        <TableRow>
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:visibility="visible"
+                android:background="@android:color/black"
+
+                />
+
+        </TableRow>
+
+
+
+
+
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+
+                android:text="Visit the BBC Weather website for more information"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/InformationID"
+                android:textAlignment="center" />
+
+
+        </TableRow>
+
+
+
+        <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+
+
+            <TextView
+                android:id="@+id/LinkID"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:text="Link"
+                android:textStyle="normal|bold"
+                android:textAlignment="center" />
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</ScrollView>
